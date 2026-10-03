@@ -1,13 +1,22 @@
-export default function Marketplace() {
+function Marketplace() {
   return (
-    <div className="min-h-screen p-10">
-      <h1 className="text-4xl font-bold text-emerald-950">
-        Local Experiences
-      </h1>
+    <main className="page-container">
+      <div className="section-heading">
+        <span>LOCAL EXPERIENCES</span>
+        <h1>Discover local experiences.</h1>
+        <p>Connect with the people and services that make a journey memorable.</p>
+      </div>
 
-      <p className="mt-4 text-gray-600">
-        Discover local guides, homestays and unique experiences.
-      </p>
-    </div>
+      <div className="feature-grid">
+        {["Local Guides", "Homestays", "Transport", "Local Food"].map((item) => (
+          <div className="feature-card" key={item}>
+            <h3>{item}</h3>
+            <p>Explore local offerings and experiences.</p>
+          </div>
+        ))}
+      </div>
+    </main>
   );
 }
+
+export default Marketplace;

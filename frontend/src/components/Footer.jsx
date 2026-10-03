@@ -1,9 +1,14 @@
-const Footer = () => {
+function Footer() {
   return (
-    <footer>
-      <h2>Footer</h2>
+    <footer className="footer">
+      <div>
+        <h2>Travique.</h2>
+        <p>Discover places. Experience more.</p>
+      </div>
+
+      <p>© 2026 Travique. All rights reserved.</p>
     </footer>
   );
-};
+}
 
 export default Footer;
