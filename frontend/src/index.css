@@ -276,3 +276,290 @@ button, input, select {
     align-items: flex-start;
   }
 }
+
+.explore-page {
+  padding: 60px 7%;
+  min-height: 80vh;
+}
+
+.explore-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 40px;
+}
+
+.explore-header h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 12px 0;
+}
+
+.explore-header p {
+  color: #777;
+  line-height: 1.7;
+}
+
+.eyebrow {
+  color: #16a085;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.explore-controls {
+  display: flex;
+  gap: 15px;
+  max-width: 850px;
+  margin: 0 auto 40px;
+}
+
+.explore-controls input,
+.explore-controls select {
+  padding: 14px 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  background: white;
+  color: #222;
+}
+
+.explore-controls input {
+  flex: 1;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.status-message,
+.error-message {
+  text-align: center;
+  padding: 30px;
+}
+
+.error-message {
+  color: #dc2626;
+}
+
+@media (max-width: 600px) {
+  .explore-controls {
+    flex-direction: column;
+  }
+}
+
+.destination-card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.destination-card {
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   Destination Details
+   ========================= */
+
+.details-page {
+  min-height: 80vh;
+  padding: 60px 8%;
+  background: #f8f9f5;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #176c53;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.details-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px;
+  background: white;
+  border-radius: 20px;
+  border: 1px solid #e5ebe6;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+.details-content {
+  max-width: 800px;
+}
+
+.details-content .eyebrow {
+  color: #188365;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.details-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(40px, 6vw, 64px);
+  line-height: 1.1;
+  margin: 15px 0;
+  color: #18352f;
+}
+
+.details-location {
+  color: #188365;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.details-description {
+  color: #68756f;
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 700px;
+}
+
+.details-info {
+  display: flex;
+  gap: 20px;
+  margin: 35px 0;
+  flex-wrap: wrap;
+}
+
+.details-info div {
+  min-width: 180px;
+  padding: 18px 20px;
+  background: #f5f8f5;
+  border-radius: 12px;
+}
+
+.details-info span {
+  display: block;
+  color: #718078;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.details-info strong {
+  color: #18352f;
+  font-size: 18px;
+}
+
+.planner-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 22px;
+  background: #176c53;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.planner-link:hover {
+  background: #125742;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .details-page {
+    padding: 40px 5%;
+  }
+
+  .details-hero {
+    padding: 30px 25px;
+  }
+
+  .details-info {
+    flex-direction: column;
+  }
+
+  .details-info div {
+    width: 100%;
+  }
+}
+
+.planner-page {
+  padding: 60px 7%;
+  min-height: 80vh;
+}
+
+.planner-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 35px;
+}
+
+.planner-header h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.planner-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+}
+
+.planner-form label {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.planner-form input,
+.planner-form select {
+  padding: 13px 15px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  font-size: 15px;
+}
+
+.planner-form button {
+  margin-top: 15px;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #147d70;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.planner-form button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.itinerary-section {
+  max-width: 850px;
+  margin: 50px auto;
+}
+
+.itinerary-card {
+  padding: 24px;
+  margin: 20px 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: white;
+}
+
+.itinerary-card li {
+  margin: 10px 0;
+  line-height: 1.6;
+}

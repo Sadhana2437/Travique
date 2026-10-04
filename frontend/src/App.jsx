@@ -8,6 +8,7 @@ import Explore from "./pages/Explore";
 import Planner from "./pages/Planner";
 import Marketplace from "./pages/Marketplace";
 import Login from "./pages/Login";
+import DestinationDetails from "./pages/DestinationDetails";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/planner" element={<Planner />} />
         <Route path="/marketplace" element={<Marketplace />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/destinations/:id" element={<DestinationDetails />} />
       </Routes>
 
       <Footer />
